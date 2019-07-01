@@ -159,21 +159,22 @@ export default class Home extends Component {
           </svg>
         <Helmet title="My Title Hay James" />
         <header class="video-header">
-          <video id="intro" src={require("../../video/intro.mp4")} autoplay loop playsinline muted></video>
+          <video id="intro" src={require("../../video/intro2.mp4")} autoplay loop playsinline muted></video>
           <div class="viewport-header viewport-header__transform">
+            <svg data-opacity="100" style="background-color:wheat;position:absolute;top:0;left:0;width:80px;height:80px;fill:#000"><use xlinkhref="#icon-Branding__Logo"></use></svg> 
             <svg><use xlinkhref="#icon-Branding__Logo"></use></svg>
-            <div class="splash__overlay">
-              <div data-opacity="150" class="hero">
-                <svg><use xlinkhref="#icon-Personal__Best"></use></svg>
-                <h1 id="lead">Dedicated, passionate, intelligent: welcome to bespoke personal
-                        training.</h1>
-              </div>
-            </div>
             <div data-opacity="100" class="masthead-arrow"></div>
           </div>
         </header>
         <article class="container">
+          <div class="splash__overlay">
+            <div class="hero">
+              <svg><use xlinkhref="#icon-Personal__Best"></use></svg>
+              <div id="lead">Dedicated, passionate, intelligent: welcome to bespoke personal training.</div>
+            </div>
+          </div>
           <img
+            style="z-index:-1"
             className="lazy"
             data-sizes="auto"
             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 650 300'%3E%3C/svg%3E"

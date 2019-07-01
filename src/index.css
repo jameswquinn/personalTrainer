@@ -248,7 +248,8 @@ header {
 
 .video-header {
   grid-template-rows: 100vh;
-  background-color: rgba(216, 72, 72, 0.377);
+  background-color: transparent;
+  /*background-color: rgba(216, 72, 72, 0.377);*/
 }
 .video-header,
 .video-header video,
@@ -284,18 +285,20 @@ header {
 }
 
 .splash__overlay {
+  background-color: black;
+  margin: auto;
   width: 100%; /*width needs to be setup*/
-  height: 100vh; /*height needs to be setup*/
+  height: auto; /*height needs to be setup*/
   display: flex;
 }
 
 .splash__overlay .hero {
-  margin: auto;
-  max-width: calc(25vw + 6em);
+  z-index: 1;
+  margin: auto;  
+  text-align: center;
 }
 
 #lead {
-  margin-top: 1rem;
   color: snow;
   font-family: "Times New Roman";
   font-weight: normal;
