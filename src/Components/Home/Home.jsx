@@ -186,7 +186,9 @@ export default class Home extends Component {
           <svg><use xlinkhref="#icon-Nutrition"></use></svg>
           <svg><use xlinkhref="#icon-Strength"></use></svg>
           <svg><use xlinkhref="#icon-Toning"></use></svg>
+          <svg width="100" height="100"><use xlinkhref="#icon-Branding__Logo"></use></svg> 
         </article>
+          
       </main>
     );
   }
