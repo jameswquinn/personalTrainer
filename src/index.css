@@ -302,13 +302,6 @@ header {
   text-align: center;
   font-size: 18px;
 }
-.st0 {
-  fill: none;
-}
-
-.st1 {
-  fill: #fff;
-}
 
 main article :not(img) {
   margin: 1.7em;
